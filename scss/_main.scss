@@ -1,0 +1,563 @@
+// @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+@font-face {
+    font-family: SansRegular;
+    src: url(/NotoSansCJKtc-Regular.otf);
+}
+
+body {
+    font-family: SansRegular;
+}
+
+body {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.txt {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+p {
+    font-size: 16px;
+}
+
+.li-rwd-pr {
+    padding-right: 48px;
+
+    @include pad-l {
+        padding-right: 30px;
+    }
+
+    @include pad {
+        padding-right: 20px;
+    }
+
+    @include pad-s {
+        padding-right: 10px;
+    }
+}
+
+.img-rwd-pr {
+    padding-right: 32px;
+    box-sizing: content-box;
+
+    @include pad-l {
+        padding-right: 20px;
+    }
+
+    @include pad {
+        padding-right: 16px;
+    }
+
+    @include pad-s {
+        padding-right: 8px;
+    }
+
+    @include phone {
+        box-sizing: content-box;
+    }
+}
+
+header {
+    background-color: #AA0601;
+    margin-bottom: 96px;
+
+    @include pad {
+        margin-bottom: 80px;
+    }
+
+    @include phone {
+        margin-bottom: 40px;
+    }
+}
+
+.w0-auto {
+    padding-left: 10%;
+    padding-right: 10%;
+
+    @include pad {
+        max-width: 768px;
+        margin-left: 36px;
+        margin-right: 36px;
+    }
+
+    @include phone {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+}
+
+.header-content {
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    @include pad {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    @include phone {
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .imgbox {
+        height: 72px;
+
+        img {
+            margin-top: 12px;
+            margin-bottom: 11.43px;
+        }
+
+        @include pad-s {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            width: 100%;
+            padding-left: 15px;
+            height: 80px;
+        }
+
+        @include phone {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            width: 100%;
+            padding-left: 15px;
+            height: 80px;
+        }
+    }
+}
+
+.header-h1 {
+    border-left: #9F1213 solid 8px;
+    padding-left: 16px;
+    margin-bottom: 32px;
+
+    @include phone {
+        margin-bottom: 40px;
+    }
+}
+
+.header-h2 {
+    display: inline-block;
+    // height: 36px;
+    margin-bottom: 24px;
+}
+
+.header-h3 {
+    margin-bottom: 8px;
+    // height: 30px;
+    display: block;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .header-flex-li-4 {
+        margin-right: 0;
+    }
+
+    @include pad-s {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    @include phone {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    li {
+        line-height: 1.5;
+        font-size: 20px;
+        margin-right: 64px;
+        width: calc;
+        color: white;
+        padding: 0px;
+
+        @include pad-s {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 48px;
+            font-size: 16px;
+            width: calc(50%);
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            border: 1px solid white;
+        }
+
+        @include phone {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 48px;
+            font-size: 16px;
+            // width: calc(50% - 1px);
+            width: calc(50%);
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            border: 1px solid white;
+        }
+    }
+}
+
+// .q-one {
+//     max-width: 294px;
+// }
+
+// .q-two {
+//     max-width: 278px;
+// }
+
+// .q-three {
+//     max-width: 274px;
+// }
+
+.q-four {
+    // max-width: 354px;
+    text-wrap: nowrap;
+}
+
+// .q-five {
+//     max-width: 254px;
+// }
+
+.card-content p {
+    max-width: 856px;
+    line-height: 24px;
+    margin-bottom: 32px;
+
+    @include pad {
+        max-width: 696px;
+    }
+
+    @include phone {
+        max-width: 348px;
+    }
+}
+
+.big-content {
+    margin-bottom: 80px;
+
+    @include pad {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+    @include phone {
+        margin-bottom: 64px;
+        padding-left: 3%;
+        padding-right: 4%;
+    }
+
+}
+
+.footer-content {
+    @include pad {
+        padding-left: 1%;
+        padding-right: 1%;
+    }
+
+}
+
+
+.footer-all {
+    background-color: #AA0601;
+    // padding-left: 2%
+}
+
+.footer-navbar {
+    padding-top: 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    @include pad {
+        justify-content: space-between;
+    }
+}
+
+.footer-navbar ul {
+    display: flex;
+
+    @include phone {
+        display: none;
+    }
+
+    li {
+        color: white;
+        height: 24px;
+        font-size: 16px;
+
+        @include pad {
+            font-size: 14px;
+        }
+
+        @include pad-s {
+            font-size: 12px;
+        }
+    }
+}
+
+.imgbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-address {
+    margin: 0 auto;
+    border-bottom: white 1px solid;
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+
+    @include phone {
+        margin-bottom: 16px;
+        padding-bottom: 24px;
+    }
+
+    h2 {
+        color: white;
+        font-size: 36px;
+        display: inline-block;
+
+        @include pad-l {
+            font-size: 32px;
+        }
+
+        @include pad-s {
+            font-size: 24px;
+        }
+
+        @include phone {
+            font-size: 16px;
+        }
+    }
+}
+
+.phone {
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+    h2 {
+        text-wrap: nowrap;
+        padding-left: 22px;
+        max-width: 223px;
+
+        @include phone {
+            padding-left: 11px;
+        }
+    }
+}
+
+.mail h2 {
+    padding-left: 20px;
+    max-width: 380px;
+
+    @include phone {
+        padding-left: 10px;
+    }
+}
+
+.footer-bottom {
+    padding-bottom: 32px;
+    background-color: #AA0601;
+    display: flex;
+    justify-content: space-between;
+
+    @include pad-s {
+        flex-direction: column;
+        padding-bottom: 24px;
+    }
+
+    @include phone {
+        flex-direction: column;
+        padding-bottom: 24px;
+    }
+
+    h5 {
+        font-family: 'Roboto Flex', sans-serif;
+        color: white;
+
+        @include pad-s {
+            padding-left: 1%;
+            padding-bottom: 8px;
+
+        }
+
+        @include phone {
+            padding-left: 4%;
+            padding-bottom: 8px;
+        }
+    }
+
+    .footer-bottom-navbar {
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        font-size: 14px;
+
+        @include pad-s {
+            flex-direction: column;
+        }
+
+        @include phone {
+            flex-direction: column;
+        }
+
+        li {
+            padding-left: 48px;
+
+            @include pad-s {
+                padding-left: 1%;
+            }
+
+            @include phone {
+                padding-left: 4%;
+            }
+        }
+    }
+}
+
+.imgbar-fb {
+    width: 48px;
+    height: 48px;
+
+    @include pad {
+        width: 40px;
+        height: 40px;
+    }
+
+    @include phone {
+        width: 24px;
+        height: 24px;
+        padding-right: 8px;
+
+    }
+}
+
+.imgbar-ig {
+    width: 48px;
+    height: 48px;
+
+    @include pad {
+        width: 40px;
+        height: 40px;
+    }
+
+    @include phone {
+        width: 24px;
+        height: 24px;
+        padding-right: 8px;
+    }
+}
+
+.imgbar-line {
+    width: 48px;
+    height: 48px;
+
+    @include pad {
+        width: 40px;
+        height: 40px;
+    }
+
+    @include phone {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.img-w-h-rwd {
+    @include pad-s {
+        width: 26px;
+        height: 26px;
+    }
+}
+
+.footer-box1 {
+    @include phone {
+        position: absolute;
+        right: 3%;
+    }
+}
+
+.footer-box2 {
+    @include phone {
+        padding-left: 4%;
+        padding-top: 6%;
+    }
+}
+
+.phone-img {
+    width: 36px;
+    height: 36px;
+
+    @include pad-s {
+        width: 26px;
+        height: 26px;
+    }
+
+    @include phone {
+        width: 18px;
+        height: 18px;
+    }
+}
+
+.mail-img {
+    width: 40px;
+    height: 32px;
+
+    @include pad-s {
+        width: 30px;
+        height: 28px;
+    }
+
+    @include phone {
+        width: 20px;
+        height: 16px;
+    }
+}
+
+.footer-bottom-navbar1 {
+    @include pad-s {
+        padding-bottom: 8px;
+    }
+
+    @include phone {
+        padding-bottom: 8px;
+    }
+}
