@@ -154,9 +154,12 @@ header {
     border-left: #9F1213 solid 8px;
     padding-left: 16px;
     margin-bottom: 32px;
-
+    @include pad-s{
+        font-size: 34px;
+    }
     @include phone {
         margin-bottom: 40px;
+        font-size: 24px;
     }
 }
 
